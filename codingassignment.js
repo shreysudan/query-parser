@@ -36,9 +36,9 @@ function parseQString(str) {
 				lat: locArr[2]
 			}
 		},
-		imageId: qArr[5]
+		imageId: qArr[5] || `${qArr[1]}.jpg`
 	};
-	
+
 	return obj;
 }
 
